@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="inetbanking">
+	<listeners>
+		<listener class-name="com.employee.api.utilities.reporting"/>
+	</listeners>
+	<test name="employee api  testing">
+	
+	<classes>
+		
+		<class name="com.employee.api.testCases.TC001_Get_all_employees"/>
+		<class name="com.employee.api.testCases.TC002_Get_single_employee_data"/>
+		<class name="com.employee.api.testCases.TC003_Create_employee"/>
+		<class name="com.employee.api.testCases.TC004_Update_employee"/>
+		<class name="com.employee.api.testCases.TC005_Delete_employee"/>
+		
+	</classes>
+	</test>
+</suite>

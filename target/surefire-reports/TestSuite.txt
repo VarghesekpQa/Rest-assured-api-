@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 35, Failures: 14, Errors: 0, Skipped: 0, Time elapsed: 37.423 s <<< FAILURE! - in TestSuite
+com.employee.api.testCases.TC001_Get_all_employees.checkContentType  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: expected [application/json] but found [text/html; charset=UTF-8]
+	at com.employee.api.testCases.TC001_Get_all_employees.checkContentType(TC001_Get_all_employees.java:65)
+
+com.employee.api.testCases.TC001_Get_all_employees.checkStatusCode  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [429]
+	at com.employee.api.testCases.TC001_Get_all_employees.checkStatusCode(TC001_Get_all_employees.java:45)
+
+com.employee.api.testCases.TC001_Get_all_employees.checkStatusLine  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 429 Too Many Requests]
+	at com.employee.api.testCases.TC001_Get_all_employees.checkStatusLine(TC001_Get_all_employees.java:57)
+
+com.employee.api.testCases.TC002_Get_single_employee_data.checkContentType  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: expected [application/json] but found [text/html; charset=UTF-8]
+	at com.employee.api.testCases.TC002_Get_single_employee_data.checkContentType(TC002_Get_single_employee_data.java:64)
+
+com.employee.api.testCases.TC002_Get_single_employee_data.checkStatusCode  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [429]
+	at com.employee.api.testCases.TC002_Get_single_employee_data.checkStatusCode(TC002_Get_single_employee_data.java:44)
+
+com.employee.api.testCases.TC002_Get_single_employee_data.checkStatusLine  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 429 Too Many Requests]
+	at com.employee.api.testCases.TC002_Get_single_employee_data.checkStatusLine(TC002_Get_single_employee_data.java:56)
+
+com.employee.api.testCases.TC003_Create_employee.checkContentType  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: expected [application/json] but found [text/html; charset=UTF-8]
+	at com.employee.api.testCases.TC003_Create_employee.checkContentType(TC003_Create_employee.java:83)
+
+com.employee.api.testCases.TC003_Create_employee.checkResponseBody  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.employee.api.testCases.TC003_Create_employee.checkResponseBody(TC003_Create_employee.java:51)
+
+com.employee.api.testCases.TC003_Create_employee.checkStatusCode  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [429]
+	at com.employee.api.testCases.TC003_Create_employee.checkStatusCode(TC003_Create_employee.java:63)
+
+com.employee.api.testCases.TC003_Create_employee.checkStatusLine  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 429 Too Many Requests]
+	at com.employee.api.testCases.TC003_Create_employee.checkStatusLine(TC003_Create_employee.java:75)
+
+com.employee.api.testCases.TC005_Delete_employee.checkContentType  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: expected [application/json] but found [text/html; charset=UTF-8]
+	at com.employee.api.testCases.TC005_Delete_employee.checkContentType(TC005_Delete_employee.java:71)
+
+com.employee.api.testCases.TC005_Delete_employee.checkResponseBody  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.employee.api.testCases.TC005_Delete_employee.checkResponseBody(TC005_Delete_employee.java:40)
+
+com.employee.api.testCases.TC005_Delete_employee.checkStatusCode  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [429]
+	at com.employee.api.testCases.TC005_Delete_employee.checkStatusCode(TC005_Delete_employee.java:51)
+
+com.employee.api.testCases.TC005_Delete_employee.checkStatusLine  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 429 Too Many Requests]
+	at com.employee.api.testCases.TC005_Delete_employee.checkStatusLine(TC005_Delete_employee.java:63)
+
